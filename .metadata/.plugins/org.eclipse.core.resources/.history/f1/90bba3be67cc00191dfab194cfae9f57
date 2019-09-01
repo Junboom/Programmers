@@ -1,0 +1,12 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Solution_¿ÀÇÂÃ¤ÆÃ¹æ {
+
+	public static void main(String[] args) {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb = new StringBuilder();
+		sb.append('[\"Enter uid1234 Muzi\", \"Enter uid4567 Prodo\",\"Leave uid1234\",\"Enter uid1234 Prodo\",\"Change uid4567 Ryan\"]');
+	}
+
+}

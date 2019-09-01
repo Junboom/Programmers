@@ -1,0 +1,40 @@
+import java.util.*;
+
+/*
+ * 	[3,4,2,1,5]
+ * 
+ */
+
+public class Solution_½ÇÆÐÀ² {
+
+	public static int[] solution(int n, int[] record) {
+		int[] res = new int[n+2];
+		int all = record.length;
+		for (int i = 0; i < all; i++) {
+			++res[record[i]];
+		}
+		double[] failure = new double[n+1];
+		for (int i = 1; i <= n; i++) {
+			failure[i] = (double)res[i] / (double)all;
+			all -= res[i];
+		}
+		for (int i = 1; i < n; i++) {
+			for (int j = i; j < n; j++) {
+				if (failure[i-1] < failure[i]) {
+					
+				}
+			}
+		}
+		int[] ans = new int[n];
+		return ans;
+    }
+	
+	public static void main(String[] args) {
+		int n = 5;
+		int[] record = new int[] {
+				2, 1, 2, 6, 2, 4, 3, 3
+		};
+		System.out.println(Arrays.toString(solution(n, record)));
+	}
+
+}

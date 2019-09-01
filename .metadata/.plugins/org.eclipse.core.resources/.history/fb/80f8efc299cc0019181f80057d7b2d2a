@@ -1,0 +1,63 @@
+import java.util.Arrays;
+
+/*
+ * 	2
+ * 
+ */
+
+public class Solution_ÈÄº¸Å° {
+	
+	public static int ans, col, row;
+	public static String[][] rel;
+	public static String[] s;
+	public static boolean[] v;
+	
+	public static void rec(int sum) {
+		if (0 < sum) {
+			for (int i = 0; i < row; i++) {
+				for (int j = i+1; j < row; j++) {
+					if (s[i].equals(s[j])) {
+						return;
+					}
+				}
+			}
+			
+			++ans;
+		}
+		
+		for (int i = 0; i < col; i++) {
+			int max = (i+sum<col) ? i+sum : col;
+			for (int j = 0; j < col; j++) {
+				
+			}
+			rec(sum+1);
+		}
+	}
+	
+	public static int solution(String[][] relation) {
+		ans = 0;
+		col = relation[0].length;
+		row = relation.length;
+		rel = relation;
+		s = new String[row];
+		for (int i = 0; i < row; i++) {
+			s[i] = "";
+		}
+		v = new boolean[col*col];
+		rec(0);
+		return ans;
+	}
+	
+	public static void main(String[] args) {
+		String[][] relation = new String[][] {
+			{"100","ryan","music","2"},
+			{"200","apeach","math","2"},
+			{"300","tube","computer","3"},
+			{"400","con","computer","4"},
+			{"500","muzi","music","3"},
+			{"600","apeach","music","3"}
+		};
+		System.out.println(solution(relation));
+	}
+
+}
