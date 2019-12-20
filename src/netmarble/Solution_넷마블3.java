@@ -2,9 +2,9 @@ package netmarble;
 
 import java.util.Arrays;
 
-class Solution_�ݸ���3 {
+class Solution_넷마블3 {
 
-	public static int Solution(int[] vote) {
+	public static int solution(int[] vote) {
 	      int answer=0;
 	      
 	      for(int i=0;i<vote.length;i++) {
@@ -18,7 +18,7 @@ class Solution_�ݸ���3 {
 	   }
 
 	public static void main(String[] args) {
-		System.out.println(Arrays.toString(solution(new int[][] {{1, 4}, {3, 4}, {3, 10}})));
+		System.out.println(solution(new int[] {1, 4}));
 	}
 	
 }

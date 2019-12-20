@@ -1,6 +1,6 @@
 package naver;
 
-public class Solution_���̹�1 {
+public class Solution_네이버1 {
 	
 	public static int solution(String[] emails) {
 		int answer = 0;

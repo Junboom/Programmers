@@ -1,7 +1,8 @@
 package netmarble;
 
 import java.util.*;
-public class Solution_�ݸ���8 {
+
+public class Solution_넷마블8 {
 	public static int[] di = {-1,-1,0,1,1, 1, 0,-1};
 	public static int[] dj = { 0, 1,1,1,0,-1,-1,-1};
 	public static int N,M,isChanged;

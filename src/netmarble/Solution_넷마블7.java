@@ -1,8 +1,6 @@
 package netmarble;
 
-import java.util.*;
-
-class Solution_�ݸ���7 {
+class Solution_넷마블7 {
 
 	public static int solution(int n, int[][] battery) {
 		int answer = 2000000000;

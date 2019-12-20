@@ -1,8 +1,6 @@
 package netmarble;
 
-import java.util.*;
-
-class Solution_�ݸ���1 {
+class Solution_넷마블1 {
 
 	public static int solution(int[] target, int[][] positions) {
 		int answer = 0;

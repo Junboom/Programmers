@@ -1,6 +1,6 @@
 package netmarble;
 
-public class Solution_�ݸ���6 {
+public class Solution_넷마블6 {
    public static int N,M,ans;
                           //���,��,����,��
    public static int[] di = {-1,0,1,1};

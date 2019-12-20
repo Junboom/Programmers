@@ -1,6 +1,8 @@
 package netmarble;
 
-class Solution_�ݸ���9 {
+import java.util.Arrays;
+
+class Solution_넷마블9 {
 
 	public static int[] solution(int[][] v) {
 		int[] answer = new int[2];

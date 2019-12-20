@@ -2,7 +2,7 @@ package netmarble;
 
 import java.util.*;
 
-public class Solution_�ݸ���4 {
+public class Solution_넷마블4 {
 
 	public static boolean[] visit;
 	

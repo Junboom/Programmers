@@ -1,8 +1,6 @@
 package naver;
 
-import java.util.Arrays;
-
-public class Solution_���̹�2 {
+public class Solution_네이버2 {
 	
 	public static int solution(String[] drum) {
 		int answer = 0;

@@ -2,7 +2,7 @@ package netmarble;
 
 import java.util.Arrays;
 
-class Solution_�ݸ���5 {
+class Solution_넷마블5 {
 
 	public static int[] solution(int[][] v) {
 		int[] answer = new int[2];

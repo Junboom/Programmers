@@ -2,7 +2,7 @@ package naver;
 
 import java.util.Arrays;
 
-public class Solution_���̹�3 {
+public class Solution_네이버3 {
 	
 	public static int[] solution(int[][] data) {
 		int[] answer = new int[data.length];
@@ -22,7 +22,7 @@ public class Solution_���̹�3 {
 					continue;
 				int min = time;
 				
-				if (time > ) {
+				if (time > 0) {
 					if (data[min_i][2] > data[i][2]) {
 						min = data[i][1];
 						min_i = i;
