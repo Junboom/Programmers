@@ -5,7 +5,7 @@ import java.util.*;
  * 
  */
 
-public class Solution_½ÇÆÐÀ² {
+public class Solution_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ {
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static int[] solution(int N, int[] stages) {
