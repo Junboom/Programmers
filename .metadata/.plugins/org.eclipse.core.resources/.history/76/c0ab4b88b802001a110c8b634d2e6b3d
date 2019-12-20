@@ -1,0 +1,39 @@
+package kakao;
+
+public class Solution_3 {
+
+	public static class Node {
+		Node[] next;
+		
+		Node() {
+			next = new Node[36];
+		}
+	}
+	
+	public static int solution(String[] user_id, String[] banned_id) {
+        int answer = 0;
+        Node root = new Node();
+        for (int i = 0; i < user_id.length; ++i) {
+        	Node next = root;
+			char[] ch = user_id[i].toCharArray();
+			for (int j = 0; j < ch.length; ++j) {
+				if (0 <= ch[j] && ch[j] <= 9) {
+					next.next[ch[j]-'0'] = new Node();
+					next = next.next[ch[j]-'0'];
+				}
+				else {
+					next.next[ch[j]-'a'] = new Node();
+					next = next.next[ch[j]-'a'];
+				}
+			}
+		}
+        return answer;
+    }
+	
+	public static void main(String[] args) {
+		String[] user_id = {"frodo", "fradi", "crodo", "abc123", "frodoc"};
+		String[] banned_id = {"fr*d*", "abc1**"};
+		System.out.println(solution(user_id, banned_id));
+	}
+
+}

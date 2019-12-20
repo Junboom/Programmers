@@ -1,10 +1,5 @@
 import java.util.Arrays;
 
-/*
- * 	2
- * 
- */
-
 public class Solution_ÈÄº¸Å° {
 	
 	public static int ans, col, row, bin;

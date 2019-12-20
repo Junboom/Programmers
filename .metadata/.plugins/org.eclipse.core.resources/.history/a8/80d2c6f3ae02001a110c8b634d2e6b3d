@@ -1,0 +1,14 @@
+package kakao;
+
+public class Solution_1 {
+
+	public static int solution(int[][] board, int[] moves) {
+        int answer = 0;
+        return answer;
+    }
+	
+	public static void main(String[] args) {
+		
+	}
+
+}
