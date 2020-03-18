@@ -45,6 +45,7 @@ public class Solution_후보키 {
 					rv.add(mc);
 					rSw = true;
 				}
+				
 				sw = true;
 			}
 		}
