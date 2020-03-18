@@ -96,8 +96,6 @@ public class Solution_후보키 {
 		v = new boolean[col];
 		mv = new HashSet<>();
 		rec(relation, 0);
-		for (boolean[] m : mv)
-			System.out.println(Arrays.toString(m));
 		return mv.size();
 	}
 	
