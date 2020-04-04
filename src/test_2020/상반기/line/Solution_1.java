@@ -1,0 +1,10 @@
+package test_2020.상반기.line;
+
+public class Solution_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
