@@ -1,0 +1,7 @@
+   SELECT    i.ANIMAL_ID
+            ,i.NAME
+     FROM    ANIMAL_INS i
+LEFT JOIN    ANIMAL_OUTS o
+       ON    o.ANIMAL_ID = i.ANIMAL_ID
+    WHERE    o.DATETIME < i.DATETIME
+ ORDER BY    i.DATETIME;
