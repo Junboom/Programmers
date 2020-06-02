@@ -1,4 +1,4 @@
-package test_2020_상반기.midas;
+package test_2020.상반기.midas;
 
 public class Solution_3 {
 
@@ -61,7 +61,18 @@ public class Solution_3 {
 	}
 	
 	public static void down() {
-		
+		for (int j = 0; j < rLen; ++j) {
+			for (int i = cLen - 1; i > 0; --i) {
+				if (copy[i][j] != 0)
+					continue;
+				
+				int ii = i;
+				while (0 < --ii && copy[ii][j] == 0);
+				
+				copy[i][j] = copy[ii][j];
+				copy[ii][j] = 0;
+			}
+		}
 	}
 	
 	public static int solution(int[][] board) {

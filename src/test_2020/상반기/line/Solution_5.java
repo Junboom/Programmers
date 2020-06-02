@@ -25,7 +25,7 @@ public class Solution_5 {
 	public static String[] solution(String[][] dataSource, String[] tags) {
         Map<String, Integer> map = new HashMap<>();
         ValueComparator vc =  new ValueComparator(map);
-        TreeMap<String,Integer> sortedMap = new TreeMap<String,Integer>(vc);
+        TreeMap<String,Integer> sortedMap = new TreeMap<String, Integer>(vc);
         
         Set<String> set = new HashSet<>();
         
@@ -63,11 +63,13 @@ public class Solution_5 {
     }
 
 	public static void main(String[] args) {
-		String[] answer = solution(new String[][] {{"doc1", "t1", "t2", "t3"},
+		String[] answer = solution(new String[][] {
+			{"doc1", "t1", "t2", "t3"},
 			{"doc2", "t0", "t2", "t3"},
 			{"doc3", "t1", "t6", "t7"},
 			{"doc4", "t1", "t2", "t4"},
-			{"doc5", "t6", "t100", "t8"}}, new String[] {"t1", "t2", "t3"});
+			{"doc5", "t6", "t100", "t8"}
+		}, new String[] {"t1", "t2", "t3"});
 		System.out.println(Arrays.toString(answer));
 	}
 

@@ -1,4 +1,4 @@
-package test_2020_상반기.midas;
+package test_2020.상반기.midas;
 
 public class Solution_2 {
 
