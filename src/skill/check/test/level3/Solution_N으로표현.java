@@ -31,7 +31,7 @@ public class Solution_N으로표현 {
             	dp[cnt].add(N - next);
             	dp[cnt].add(N * next);
             	if (next != 0) dp[cnt].add(N / next);
-
+            	
             	Iterator<Integer> it2 = dp[cnt - 2].iterator();
         		
         		while (it2.hasNext()) {
