@@ -18,7 +18,6 @@ public class Solution_2 {
 		}
 		
 		return answer;
-
 	}
 
 	public static void main(String[] args) {
