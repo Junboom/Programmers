@@ -2,6 +2,13 @@ package skill.check.test.level3;
 
 public class Solution_추석트래픽 {
 
+	public static int datetime(String[] date, String[] time, int idx) {
+		return 24 * 60 * 60 * 1000 * Integer.parseInt(date[idx].substring(8)) +
+				60 * 60 * 1000 * Integer.parseInt(time[idx].substring(0, 2)) +
+        		60 * 1000 * Integer.parseInt(time[idx].substring(3, 5)) +
+        		(int) (1000 * Double.parseDouble(time[idx].substring(6, 12)));
+	}
+	
 	public static int solution(String[] lines) {
 		int answer = 0;
 		int size = lines.length;
@@ -15,30 +22,13 @@ public class Solution_추석트래픽 {
 			term[i] = (int) (Double.parseDouble(lines[i].substring(24, lines[i].length()-1)) * 1000);
 		}
 		
-		int first = 86400000 * Integer.parseInt(date[0].substring(8)) +
-				3600000 * Integer.parseInt(time[0].substring(0, 2)) +
-        		60000 * Integer.parseInt(time[0].substring(3, 5)) +
-        		(int) (1000 * (Double.parseDouble(time[0].substring(6, 12)) - 1)) -
-        		1000 * term[0];
-		
-		int[] array = new int[
-		        (
-		        		86400000 * Integer.parseInt(date[size-1].substring(8)) +
-		        		3600000 * Integer.parseInt(time[size-1].substring(0, 2)) +
-		        		60000 * Integer.parseInt(time[size-1].substring(3, 5)) +
-		        		(int) (1000 * (Double.parseDouble(time[size-1].substring(6, 12)) + 1))
-		        )
-		        - first
-		        + 1000 * 3
-		];
+		int first = datetime(date, time, 0) - 3000 - 1000;		
+		int[] array = new int[datetime(date, time, size - 1) - first + 1000];
 		
 		for (int i = 0; i < size; ++i) {
-	        int d = 86400000 * Integer.parseInt(date[i].substring(8)) +
-	        		3600000 * Integer.parseInt(time[i].substring(0, 2)) +
-	        		60000 * Integer.parseInt(time[i].substring(3, 5)) +
-	        		(int) (1000 * (Double.parseDouble(time[i].substring(6, 12)) - 1));
+	        int d = datetime(date, time, i) - 1000;
 	        
-	        for (int j = d - term[i] - first; j < d - first + 999; ++j)
+	        for (int j = d - term[i] - first + 1; j < d - first + 1000; ++j)
 	        	answer = answer < ++array[j] ? array[j] : answer;
 		}
 		
