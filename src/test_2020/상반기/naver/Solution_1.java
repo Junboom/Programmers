@@ -18,6 +18,11 @@ public class Solution_1 {
 	
 	public static void main(String[] args) {
 		System.out.println(solution(521));
+		System.out.println(solution(5521));
+		System.out.println(solution(125));
+		System.out.println(solution(5));
+		System.out.println(solution(15));
+		System.out.println(solution(1000000000));
 	}
 
 }
